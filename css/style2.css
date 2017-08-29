@@ -6,8 +6,77 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 
 */
-
+/*Added font-style, padding, changed background color */
 body{
     padding: 30px;
     background-color: #ffffff;
+    font-family: 'Baloo Tammudu', cursive;
+    background: gold;
+}
+
+/* Adjusted Header size for main-title id*/
+#main-title{
+  font-size: 2.5em;
+}
+
+/* Aligned Header to center for main-title id */
+#main-title{
+  text-align: center;
+}
+
+/* Used grouping to change the background color and
+ text color of the Header, Program Student Learning
+ Outcomes, and the Required courses sections */
+#main-title, #pslo,#courses{
+  background:maroon;
+  color: #e6e6e6;
+  padding: 15px;
+}
+
+/* Removed bulleted list format, and set margin */
+#faculty-list {
+  list-style: none;
+  margin: 0 35%;
+}
+
+/* restricted image size for ease of formatting */
+#faculty-list li img{
+  max-width: 200px;
+  padding: 20px;
+}
+
+/* Offset style from inherint float from faculty and
+changed the navigation bar color to maroon */
+#style{
+  margin:15px ;
+  padding: 10px;
+  background: maroon;
+}
+
+/* Removed bulleted list format, and set margin to
+establish navigation bar */
+#style ul{
+  list-style: none;
+  text-align:left;
+  margin-left: 60px;
+}
+
+/* Spaced navigation bar for relative positioning and
+made the list items display horizontally */
+#style ul li{
+  display: inline-block;
+  padding:0 12%;
+}
+
+
+/* Added a relative size multiplier to make
+faculty names class stick out more*/
+.name{
+  font-size: 1.25em;
+}
+
+/* Changed the color of the link to be comfortably
+readable */
+a{
+  color: #e6e6e6;
 }
