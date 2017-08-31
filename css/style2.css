@@ -7,26 +7,25 @@ use float to make something locate itself on the right or left
 
 */
 /*Added font-style, padding, changed background color */
+/* Grade: the body rule, especially the font-family */
 body{
     padding: 30px;
-    background-color: #ffffff;
-    font-family: 'Baloo Tammudu', cursive;
-    background: gold;
+    font-family:  cursive;
+    background-color: gold;
 }
 
 /* Adjusted Header size for main-title id*/
+/* Grade: In this rule we more specifically focused on the id of this header rather than all h1's*/
 #main-title{
   font-size: 2.5em;
-}
-
-/* Aligned Header to center for main-title id */
-#main-title{
   text-align: center;
 }
+
 
 /* Used grouping to change the background color and
  text color of the Header, Program Student Learning
  Outcomes, and the Required courses sections */
+/* Grade: particularly the use of grouping multiple ids for color and spacing*/
 #main-title, #pslo,#courses{
   background:maroon;
   color: #e6e6e6;
@@ -40,6 +39,7 @@ body{
 }
 
 /* restricted image size for ease of formatting */
+/* Grade: the use of nesting to properly regulate image size and space them appropriately */
 #faculty-list li img{
   max-width: 200px;
   padding: 20px;
@@ -47,6 +47,7 @@ body{
 
 /* Offset style from inherint float from faculty and
 changed the navigation bar color to maroon */
+
 #style{
   margin:15px ;
   padding: 10px;
@@ -71,6 +72,7 @@ made the list items display horizontally */
 
 /* Added a relative size multiplier to make
 faculty names class stick out more*/
+/* Grade: the use of class to specifically size the professors names and not the office number*/
 .name{
   font-size: 1.25em;
 }

@@ -7,7 +7,100 @@ use float to make something locate itself on the right or left
 
 */
 
+/* Implemented background image and arrangement */
+/* Grade: imported graphic as an asset for the page background */
 body{
     padding: 30px;
-    background-color: #aaaaaa;
+    background-color: #00000f;
+    background-image:url("../assets/images/cougar.jpg");
 }
+
+/*  */
+#main-title, #pslo,#courses{
+  background:#9b7323;
+  color: #11100e;
+  padding: 15px;
+}
+
+/* Enlarged and positioned faculty header */
+/* Grade: used id selection and nesting to specify instruction on a particular header */
+#faculty h2{
+  text-align:center;
+  background-color: #9b7323;
+  font-size: 35px;
+
+}
+
+/* aligned faculty blocks to be visually appealing */
+#faculty-list{
+  margin-left: 5%;
+  padding: 20px;
+
+}
+
+/* Adjust faculty images positioning relative to each other*/
+/* Grade: used the id selection to remove formatting and make page more visually appealing */
+#faculty-list li {
+  background:#9b7323;
+  list-style:none;
+  display: inline-block;
+  padding: 15px 4%;
+  margin: 20px;
+
+}
+
+/* restricted image size to be uniform */
+#faculty-list li img{
+  max-width: 180px;
+  max-height: 180px;
+  padding: 20px;
+}
+
+/* Adjusted size and style of font for name and office text */
+/* Grade: Made use of grouping and class selection to center text and adjust font size */
+.name, .office{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Created a nav bar locked to upper right of screen */
+#style{
+  position: fixed;
+  margin-left: 75%;
+  padding: 10px;
+  background-color: #994d00;
+  left: 0;
+  right: 0;
+  top: 0;
+
+}
+
+/* Changed link text color for visual aesthetic */
+/* Grade: made use of unique commands to remove default color of links */
+a{
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/* removed bullet formatting from nav bar links */
+#style ul {
+  list-style: none;
+}
+
+/* Adjusted links relative to each other, and making them inline and */
+#style ul li{
+  display: inline-flex;
+  padding: 0 15px;
+
+}
+
+/* attempted using media query to adapt to the mobile resolution, could not implement properly,
+it makes us sad */
+/*@media screen and (max-width: 320px) {
+  body {
+    margin: 50%;
+    color: blue;
+  }
+}*/
